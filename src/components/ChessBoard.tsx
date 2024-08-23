@@ -235,10 +235,10 @@ const ChessBoard = () => {
         <div className="text-xl md:text-2xl">Black Timer: {formatTime(blackTime)}</div>
     </div>
     <div className="flex gap-8 text-xl md:text-2xl">
-        <button onClick={restartGame} className="btn hover:text-blue-800"><b>Restart Game</b></button>
-        <button onClick={giveUp} className="btn hover:text-blue-800"><b>Give Up</b></button>
-        <button onClick={undoMove} className="btn hover:text-blue-800"><b>Undo Move</b></button>
-        <button onClick={toggleHistoryVisibility} className="btn hover:text-green-800">
+        <button onClick={restartGame} className="btn hover:text-red-800"><b>Restart Game</b></button>
+        <button onClick={giveUp} className="btn hover:text-red-800"><b>Give Up</b></button>
+        <button onClick={undoMove} className="btn hover:text-red-800"><b>Undo Move</b></button>
+        <button onClick={toggleHistoryVisibility} className="btn hover:text-red-800 font-bold">
             {isHistoryVisible ? 'Hide History' : 'Show History'}
         </button>
     </div>
@@ -266,7 +266,7 @@ const ChessBoard = () => {
 const Square = ({ cellDetails, cellPiece, isPossibleMove, onClick }: { cellDetails: { row: number, col: number }, cellPiece: string, isPossibleMove: boolean, onClick: () => void }) => {
     const { row, col } = cellDetails;
     const color = (row + col) % 2 === 0 ? 'bg-gray-700' : 'bg-gray-300'; // Change these colors
-    const highlightClass = isPossibleMove ? 'bg-blue-500 border border-black' : ''; // Change highlight color
+    const highlightClass = isPossibleMove ? 'bg-red-500 border border-black' : ''; // Change highlight color
 
     return (
         <div
