@@ -1,5 +1,5 @@
 # Chess Game
-
+Shipmnts Task 2 Chess Board 
 A classic chess game implemented with Next.js and React.js. This two-player game offers an engaging chess experience with various features and controls.
 
 ## Features
@@ -13,11 +13,6 @@ A classic chess game implemented with Next.js and React.js. This two-player game
 - **Responsive Design**: Adapts to different screen sizes for a seamless experience.
 - **Move History**: Tracks and displays the history of each move.
 - **Player Timers**: Timers for each player to manage game time.
-
-## Known Issues
-
-- **Check Condition Bug**: There is an issue with the check condition; valid moves are not provided when the king is in check.
-- **Missing Features**: Castling and pawn promotion functionalities are not yet implemented.
 
 ## Installation
 
