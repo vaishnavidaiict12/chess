@@ -265,8 +265,8 @@ const ChessBoard = () => {
 
 const Square = ({ cellDetails, cellPiece, isPossibleMove, onClick }: { cellDetails: { row: number, col: number }, cellPiece: string, isPossibleMove: boolean, onClick: () => void }) => {
     const { row, col } = cellDetails;
-    const color = (row + col) % 2 === 0 ? 'bg-amber-800' : 'bg-yellow-600';
-    const highlightClass = isPossibleMove ? 'bg-green-800 border border-black' : '';
+    const color = (row + col) % 2 === 0 ? 'bg-gray-700' : 'bg-gray-300'; // Change these colors
+    const highlightClass = isPossibleMove ? 'bg-blue-500 border border-black' : ''; // Change highlight color
 
     return (
         <div
@@ -287,6 +287,7 @@ const Square = ({ cellDetails, cellPiece, isPossibleMove, onClick }: { cellDetai
         </div>
     );
 }
+
 
 const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
