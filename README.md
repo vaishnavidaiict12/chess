@@ -47,7 +47,7 @@ To set up the project locally, follow these steps:
     npm run dev
     ```
 
-5. **Open Your Browser** and go to `http://localhost:3000` to play the game.
+5. **Open Your Browser** and go to [`https://chess-beryl.vercel.app/`](https://chess-beryl.vercel.app/) to play the game.
 
 ## Usage
 
