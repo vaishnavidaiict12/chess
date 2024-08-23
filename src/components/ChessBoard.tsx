@@ -235,10 +235,10 @@ const ChessBoard = () => {
         <div className="text-xl md:text-2xl">Black Timer: {formatTime(blackTime)}</div>
     </div>
     <div className="flex gap-8 text-xl md:text-2xl">
-        <button onClick={restartGame} className="btn hover:text-blue-800">Restart Game</button>
-        <button onClick={giveUp} className="btn hover:text-blue-800">Give Up</button>
-        <button onClick={undoMove} className="btn hover:text-blue-800">Undo Move</button>
-        <button onClick={toggleHistoryVisibility} className="btn hover:text-blue-800">
+        <button onClick={restartGame} className="btn hover:text-blue-800"><b>Restart Game</b></button>
+        <button onClick={giveUp} className="btn hover:text-blue-800"><b>Give Up</b></button>
+        <button onClick={undoMove} className="btn hover:text-blue-800"><b>Undo Move</b></button>
+        <button onClick={toggleHistoryVisibility} className="btn hover:text-green-800">
             {isHistoryVisible ? 'Hide History' : 'Show History'}
         </button>
     </div>
