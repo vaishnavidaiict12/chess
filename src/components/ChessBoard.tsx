@@ -206,7 +206,7 @@ const ChessBoard = () => {
     return (
         <>
             <div className="flex flex-col gap-14 items-center">
-                <div className="text-2xl md:text-4xl font-bold"> Welcome to ChessGame :)</div>
+                <div className="text-2xl md:text-4xl font-bold"> VAISHNAVI CHESS-BOARD</div>
                 <div className="flex flex-col items-center justify-center gap-5 md:gap-10">
                     <div className="flex gap-10">
                         <h2 className="text-xl md:text-2xl">Status: {gameStatus}</h2>
@@ -230,18 +230,18 @@ const ChessBoard = () => {
                     </div>
                     <div className="flex flex-col gap-5">
 
-                        <div className="flex justify-between w-full">
-                            <div className="text-xl md:text-2xl">White Timer: {formatTime(whiteTime)}</div>
-                            <div className="text-xl md:text-2xl">Black Timer: {formatTime(blackTime)}</div>
-                        </div>
-                        <div className="flex gap-8 text-xl md:text-2xl">
-                            <button onClick={restartGame} className="btn hover:text-blue-800">Restart Game</button>
-                            <button onClick={giveUp} className="btn hover:text-blue-800">Give Up</button>
-                            <button onClick={undoMove} className="btn hover:text-blue-800">Undo Move</button>
-                            <button onClick={toggleHistoryVisibility} className="btn hover:text-blue-800">
-                                {isHistoryVisible ? 'Hide History' : 'Show History'}
-                            </button>
-                        </div>
+                    <div className="flex justify-center gap-8 text-xl md:text-2xl">
+        <div className="text-xl md:text-2xl">White Timer: {formatTime(whiteTime)}</div>
+        <div className="text-xl md:text-2xl">Black Timer: {formatTime(blackTime)}</div>
+    </div>
+    <div className="flex gap-8 text-xl md:text-2xl">
+        <button onClick={restartGame} className="btn hover:text-blue-800">Restart Game</button>
+        <button onClick={giveUp} className="btn hover:text-blue-800">Give Up</button>
+        <button onClick={undoMove} className="btn hover:text-blue-800">Undo Move</button>
+        <button onClick={toggleHistoryVisibility} className="btn hover:text-blue-800">
+            {isHistoryVisible ? 'Hide History' : 'Show History'}
+        </button>
+    </div>
 
                     </div>
                 </div>
